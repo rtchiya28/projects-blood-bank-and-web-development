@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>javascript que2</title>
+<script type="text/javascript">
+function create(){
+  var v1=document.getElementById('1').value;
+var v2=document.getElementById('2').value;
+var v3=document.getElementById('3').value;
+var v4=document.getElementById('4').value;
+var v5=document.getElementById('5').value;
+var v6=document.getElementById('6').value;
+var v7=document.getElementById('7').value;
+var v8=document.getElementById('8').value;
+ var cre=[v1,v2,v3,v4,v5,v6,v7,v8];
+  cre.sort();
+cre.reverse();
+ var x=cre[0];
+  document.getElementById('t1').value=x;
+}
+</script>
+</head>
+<body><h3>enter 8 numbers :</h3><br>
+<input type="text" id="1"><br>
+<input type="text" id="2"><br>
+<input type="text" id="3"><br>
+<input type="text" id="4"><br>
+<input type="text" id="5"><br>
+<input type="text" id="6"><br>
+<input type="text" id="7"><br>
+<input type="text" id="8"><br>
+to get the result click here:<br>
+<input type="button" value="click here" onClick="create()"><br>
+the highest number is:
+<input type="text" id="t1">
+</body>
+</html>

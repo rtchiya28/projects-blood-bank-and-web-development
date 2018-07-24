@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>javascript que 3</title>
+<script type="text/javascript">
+function createdis(){
+  var myinfo=new Object();
+  myinfo.name=document.getElementById('t1').value;
+myinfo.age=document.getElementById('t2').value;
+myinfo.salary=document.getElementById('t3').value;
+myinfo.desig=document.getElementById('t4').value;
+document.getElementById('r1').value=myinfo.name;
+document.getElementById('r2').value=myinfo.age;
+document.getElementById('r3').value=myinfo.salary;
+document.getElementById('r4').value=myinfo.desig;
+}
+</script>
+<body>
+<fieldset width="800px">
+<legend>Information</legend>
+<h3>Enter the informnation of employee</h3><br>
+NAME:<input type="text" id="t1"><br>
+AGE:<input type="text" id="t2"><br>
+SALARY:<input type="text" id="t3"><br>
+DESIGNATION:<input type="text" id="t4"><br>
+<input type="button" value="click here" id="b1" onClick="createdis()"><br>
+</fieldset>
+<h2>The stored information is as:</h2>
+NAME OF EMPLOYEE:<input type="text" id="r1"><br>
+AGE OF EMPLOYEE: <input type="text" id="r2"><br>
+SALARY OF EMPLOYEE:<input type="text" id="r3"><br>
+DESIGNATION:<input type="text" id="r4"><br>
+</body>
+</html>

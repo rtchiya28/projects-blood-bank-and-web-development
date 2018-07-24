@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>javascript que 4</title>
+<script type="text/javascript">
+function result(){
+  var n1=document.getElementById('t11').value;
+  var n2=document.getElementById('t21').value;
+  var n3=document.getElementById('t31').value;
+  var n4=document.getElementById('t41').value;
+  var g1=document.getElementById('t12').value;
+  var g2=document.getElementById('t22').value;
+  var g3=document.getElementById('t32').value;
+  var g4=document.getElementById('t42').value;
+  var a1="distinction"
+  var a2="very good"
+  var a3="good"
+  var a4="average"
+ switch(g1)
+{
+case "A":  document.getElementById('r12').value=a1;break;
+case "B":   document.getElementById('r12').value=a2;break;
+case "C":  document.getElementById('r12').value=a3;break;
+case "D":  document.getElementById('r12').value=a4;break;
+}
+switch(g2)
+{
+case "A":  document.getElementById('r22').value=a1;break;
+case "B":   document.getElementById('r22').value=a2;break;
+case "C":  document.getElementById('r22').value=a3;break;
+case "D":  document.getElementById('r22').value=a4;break;
+}
+switch(g3)
+{
+case "A":  document.getElementById('r32').value=a1;break;
+case "B":   document.getElementById('r32').value=a2;break;
+case "C":  document.getElementById('r32').value=a3;break;
+case "D":  document.getElementById('r32').value=a4;break;
+}
+switch(g4)
+{
+case "A":  document.getElementById('r42').value=a1;break;
+case "B":   document.getElementById('r42').value=a2;break;
+case "C":  document.getElementById('r42').value=a3;break;
+case "D":  document.getElementById('r42').value=a4;break;
+}
+document.getElementById('r11').value=n1;
+document.getElementById('r21').value=n2;
+document.getElementById('r31').value=n3;
+document.getElementById('r41').value=n4;
+
+
+}
+</script>
+</head>
+<body>
+<fieldset width="400px">
+<legend>GRADING SYSTEM</legend>
+<table border="1">
+<tr>
+<td>A</td>
+<td>Distinction</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Very Good</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Good</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Average</td>
+</tr>
+</table>
+</fieldset>
+<table border="1">
+<tr>
+<th>NAME</th>
+<th>GRADE</th>
+</tr>
+<tr>
+<td><input type="text" id="t11"></td>
+<td><input type="text" id="t12"></td>
+</tr>
+<tr>
+<td><input type="text" id="t21"></td>
+<td><input type="text" id="t22"></td>
+</tr>
+<tr>
+<td><input type="text" id="t31"></td>
+<td><input type="text" id="t32"></td>
+</tr>
+<tr>
+<td><input type="text" id="t41"></td>
+<td><input type="text" id="t42"></td>
+</tr>
+</table><br>
+<h2>RESULT</h2><br>
+<table border="1">
+<tr>
+<td><input type="text" id="r11"></td>
+<td><input type="text" id="r12"></td>
+</tr>
+<tr>
+<td><input type="text" id="r21"></td>
+<td><input type="text" id="r22"></td>
+</tr>
+<tr>
+<td><input type="text" id="r31"></td>
+<td><input type="text" id="r32"></td>
+</tr>
+<tr>
+<td><input type="text" id="r41"></td>
+<td><input type="text" id="r42"></td>
+</tr>
+</table>
+<h2>to get the result click here:</h2>
+<input type="button" value="click here" id="b1" onClick="result()"><br>
+</body>
+</html>
+
+
